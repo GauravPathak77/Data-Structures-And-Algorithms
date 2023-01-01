@@ -18,15 +18,19 @@ public class PushAtBottom {
     public static void main(String args[]) {
         try(Scanner sc = new Scanner(System.in)){
             Stack<Integer> s = new Stack<>();
-            s.push(2);
-            s.push(3);
-            s.push(4);
-            s.push(5);
+            String choice;
+            do {
+                System.out.println("Push data in stack: ");
+                int data = sc.nextInt();
+                s.push(data);
+                System.out.println("Want to Push more data(T/F)?: ");
+                choice = sc.next();
+            } while (choice == "T");
             System.out.println("Enter data to enter at the bottom of stack: ");
-            int data = sc.nextInt();
+            int newdata = sc.nextInt();
             System.out.println("Original stack: ");
             print(s);
-            pushAtBottom(s, data);
+            pushAtBottom(s, newdata);
             System.out.println("\nAfter pushing at the bottom of stack: ");
             print(s);
         }
