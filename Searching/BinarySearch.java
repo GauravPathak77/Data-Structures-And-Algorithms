@@ -1,5 +1,4 @@
-// import java.util.*;
-//Binary Search
+import java.util.*;
 public class BinarySearch{
     public static int binarySearch(int numbers[], int key){
         int start = 0, end = numbers.length-1;
@@ -22,10 +21,25 @@ public class BinarySearch{
         return -1;
     }
 
-    public static void main(String args[]){
-        int numbers[] = {2,4,6,8,10,12,14};
-        int key = 10;
-        int loc = binarySearch(numbers,key);
-        System.out.println("Value Found at: " + loc);
+    public static void main(String args[]) {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("How many numbers you want to enter? ");
+            int size = sc.nextInt();
+            int num[] = new int[size];
+            System.out.println("Enter numbers: ");
+            for (int i = 0; i < size; i++) {
+                num[i] = sc.nextInt();
+            }
+            System.out.print("Which number you want to search? ");
+            int key = sc.nextInt();
+            int loc = binarySearch(num, key);
+            if (loc != -1) {
+                System.out.println(key + " found at position " + (loc+1));
+            } else {
+                System.out.println(key + " not found");
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
