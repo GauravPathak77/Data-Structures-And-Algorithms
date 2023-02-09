@@ -8,11 +8,10 @@ public class DiagonalSum {
                     sum += matrix[i][j];
                 }
                 else if(i+j == matrix.length-1){
-                    sum += sum;
+                    sum += matrix[i][j];
                 }
             }
         }
-        sum -= matrix[matrix.length/2][matrix[0].length/2];
         return sum;
     }
     public static void main(String args[]) {
