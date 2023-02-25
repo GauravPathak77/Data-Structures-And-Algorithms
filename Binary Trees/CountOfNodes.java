@@ -55,7 +55,7 @@ public class CountOfNodes {
             Node root = tree.buildTree(nodes);
             System.out.print("\nDo you Want to print number of nodes in tree(y/n)? ");
             char ch = sc.next().charAt(0);
-            if (ch == 'y' || ch == 'Y') {
+            if (ch == 'y') {
                 tree.count(root);
             }
         } catch (Exception e) {
