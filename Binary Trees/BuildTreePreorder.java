@@ -28,7 +28,7 @@ public class BuildTreePreorder{
     public static void main(String args[]){
         try(Scanner sc = new Scanner(System.in)){
             ArrayList<Integer> nodes = new ArrayList<>();
-            System.out.println("Enter values of nodes: ");
+            System.out.println("Enter values of nodes and -1 for null: ");
             char choice;
             do{
                 int data = sc.nextInt();
