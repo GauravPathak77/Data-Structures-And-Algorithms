@@ -41,6 +41,7 @@ public class DiameterOfTree2 {
         return Math.max(lh, rh) + 1;
     }
 
+    // Info class for diameter and height
     static class Info{
         int diam;
         int ht;
