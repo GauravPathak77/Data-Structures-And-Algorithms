@@ -82,14 +82,12 @@ public class LowestCommonAncestor {
 
             BinaryTree tree = new BinaryTree();
             Node root = tree.buildTree(nodes);
-            System.out.print("\nDo you Want to print last common ancestor of two nodes of tree(y/n)? ");
+            System.out.print("\nDo you Want to print lowest common ancestor of two nodes of tree(y/n)? ");
             char ch = sc.next().charAt(0);
-            System.out.print("Enter the value of level which you want to print: ");
-            int k = sc.nextInt();
             if (ch == 'y' || ch == 'Y') {
-                System.out.print("\n Enter first node: ");
+                System.out.print("\nEnter first node: ");
                 int n1 = sc.nextInt();
-                System.out.print("\n Enter second node: ");
+                System.out.print("Enter second node: ");
                 int n2 = sc.nextInt();
                 Node Lca = lca(root, n1, n2);
                 System.out.println("Last common ancestor is: " + Lca);
