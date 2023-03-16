@@ -87,6 +87,5 @@ public class DiameterOfTree2 {
         } catch (Exception e) {
             System.out.println(e);
         }
-
     }
 }
