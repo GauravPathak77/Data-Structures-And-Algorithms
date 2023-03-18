@@ -10,7 +10,6 @@ public class UnivaluedTree {
             this.right = null;
         }
     }
-
     public static class BinaryTree {
         static int idx = -1;
 
@@ -73,13 +72,13 @@ public class UnivaluedTree {
 
             BinaryTree tree = new BinaryTree();
             Node root = tree.buildTree(nodes);
-            System.out.print("\nDo you Want to check tree is univalued or not(y/n)? ");
+            System.out.print("\nDo you Want to check the tree is univalued or not(y/n)? ");
             char ch = sc.next().charAt(0);
             if (ch == 'y' || ch == 'Y') {
                 if (isUnivalTree(root)) {
-                    System.out.print("YES");
+                    System.out.print("Tree is univalued");
                 } else {
-                    System.out.print("NO");
+                    System.out.print("Tree is not univalued");
                 }
             }
         } catch (Exception e) {
