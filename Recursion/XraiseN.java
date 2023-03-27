@@ -8,23 +8,12 @@ public class XraiseN {
     }
     public static void main(String args[]) {
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.print("Enter size of array: ");
-            int size = sc.nextInt();
-            int arr[] = new int[size];
-            System.out.println("Enter elements in array: ");
-            for (int i = 0; i < size; i++) {
-                arr[i] = sc.nextInt();
-            }
-            System.out.print("\nEnter base: ");
+            System.out.print("Enter base value: ");
             int x = sc.nextInt();
-            System.out.print("Enter power: ");
+        
+            System.out.println("Enter value of exponent: ");
             int n = sc.nextInt();
-            int i = power(x, n);
-            if (i != -1) {
-                System.out.println("Last occurence of element is: " + i);
-            } else {
-                System.out.println("Element not exist");
-            }
+            System.out.println(x + " raise " + n + " is: " + power(x, n));
         } catch (Exception e) {
             System.out.println(e);
         }
