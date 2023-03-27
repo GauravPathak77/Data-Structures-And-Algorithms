@@ -13,7 +13,7 @@ public class XraiseN {
         
             System.out.println("Enter value of exponent: ");
             int n = sc.nextInt();
-            System.out.println(x + " raise " + n + " is: " + power(x, n));
+            System.out.println("\n" + x + " raise " + n + " is: " + power(x, n));
         } catch (Exception e) {
             System.out.println(e);
         }
