@@ -3,7 +3,7 @@ import java.util.*;
 public class RemoveDuplicates {
     public static void removeDuplicates(boolean map[], String str, StringBuilder newStr, int idx) {
         if(idx == str.length()){
-            System.out.println(newStr);
+            System.out.println("After removing duplicates: " + newStr);
             return;
         }
 
