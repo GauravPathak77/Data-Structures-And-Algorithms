@@ -17,10 +17,10 @@ public class BuildBST{
         }
 
         if(root.data > val){
-            insert(root.left, val);
+            root.left = insert(root.left, val);
         }
         else{
-            insert(root.right, val);
+            root.right = insert(root.right, val);
         }
         return root;
     }
@@ -40,7 +40,7 @@ public class BuildBST{
             ArrayList<Integer> values = new ArrayList<>();
             char ch;
             do{
-                System.out.print("\nEnter value: ");
+                System.out.print("Enter value: ");
                 int data = sc.nextInt();
                 values.add(data);
                 System.out.print("Want to enter more values(y/n)?");
@@ -48,6 +48,7 @@ public class BuildBST{
             }while(ch == 'y' || ch == 'Y');
 
             Node root = null;
+            System.out.println("\nBinary Search Tree is: ");
             for(int i=0; i<values.size(); i++){
                 root = insert(root, values.get(i));
             }
