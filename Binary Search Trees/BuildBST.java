@@ -43,7 +43,7 @@ public class BuildBST{
                 System.out.print("Enter value: ");
                 int data = sc.nextInt();
                 values.add(data);
-                System.out.print("Want to enter more values(y/n)?");
+                System.out.print("Want to enter more values(y/n)? ");
                 ch = sc.next().charAt(0);
             }while(ch == 'y' || ch == 'Y');
 
