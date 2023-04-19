@@ -12,6 +12,30 @@ public class Merge2BSTs{
         }
     }
 
+    public static Node insert(Node root, int val) {
+        if (root == null) {
+            root = new Node(val);
+            return root;
+        }
+
+        if (root.data > val) {
+            root.left = insert(root.left, val);
+        } else {
+            root.right = insert(root.right, val);
+        }
+        return root;
+    }
+
+    public static void inorder(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        inorder(root.left);
+        System.out.print(root.data + " ");
+        inorder(root.right);
+    }
+
     // Get Inorder Sequence
     public static void getInorder(Node root, ArrayList<Integer> arr){
         if(root == null){
@@ -69,5 +93,46 @@ public class Merge2BSTs{
 
         Node root = createBST(finalArr, 0, finalArr.size());
         return root;
+    }
+
+    public static void main(String args[]) {
+        try (Scanner sc = new Scanner(System.in)) {
+            ArrayList<Integer> tree1 = new ArrayList<>();
+            ArrayList<Integer> tree2 = new ArrayList<>();
+            char ch;
+            System.out.print("Enter values in first tree: ");
+            do {
+                int data = sc.nextInt();
+                tree1.add(data);
+                System.out.print("Do you want to enter more values(y/n)? ");
+                ch = sc.next().charAt(0);
+            } while (ch == 'y' || ch == 'Y');
+
+            Node root1 = null;
+            System.out.println("\nFirst Binary Search Tree is: ");
+            for (int i = 0; i < tree1.size(); i++) {
+                root1 = insert(root1, tree1.get(i));
+            }
+            inorder(root1);
+            System.out.print("\nEnter values in second tree: ");
+            do {
+                int data = sc.nextInt();
+                tree2.add(data);
+                System.out.print("Do you want to enter more values(y/n)? ");
+                ch = sc.next().charAt(0);
+            } while (ch == 'y' || ch == 'Y');
+
+            Node root2 = null;
+            System.out.println("\nSecond Binary Search Tree is: ");
+            for (int i = 0; i < tree2.size(); i++) {
+                root2 = insert(root2, tree2.get(i));
+            }
+            inorder(root2);
+            System.out.println("\nAfter merging both trees: ");
+            Node root3 = mergeBSTs(root1, root2);
+            inorder(root3);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }
