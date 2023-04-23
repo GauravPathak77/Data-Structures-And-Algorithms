@@ -15,7 +15,7 @@ public class StairCaseSearch {
                 row++;
             }
         }
-        System.out.print("Element not found");
+        System.out.print("Element not found!");
     }
     public static void main(String args[]){
         try(Scanner sc = new Scanner(System.in)){
