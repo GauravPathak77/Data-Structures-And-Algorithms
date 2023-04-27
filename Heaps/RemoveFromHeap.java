@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class RemoveFromHeap {
     static class Heap {
         ArrayList<Integer> arr = new ArrayList<>();
@@ -16,7 +15,6 @@ public class RemoveFromHeap {
                 arr.set(par, temp);
             }
         }
-
         // heapify
         private void heapify(int i){
             int left = (2*i) + 1;
