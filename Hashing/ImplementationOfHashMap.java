@@ -13,8 +13,6 @@ public class ImplementationOfHashMap{
                 System.out.println("Want to enter more values?(y/n): ");
                 ch = sc.next().charAt(0);
             }while(ch == 'y' || ch == 'Y');
-
-            // System.out.println("\nHashMap is: ");
             
         }
         catch(Exception e){
