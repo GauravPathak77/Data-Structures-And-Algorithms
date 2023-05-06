@@ -28,7 +28,7 @@ public class ValidParentheses {
     }
     public static void main(String args[]){
         try(Scanner sc = new Scanner(System.in)){
-            System.out.println("Enter a string of brackets: ");
+            System.out.println("Enter any string containing brackets: ");
             String str = sc.next();
             if(isValid(str)){
                 System.out.println("String is valid");
