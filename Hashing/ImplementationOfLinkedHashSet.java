@@ -6,7 +6,7 @@ public class ImplementationOfLinkedHashSet {
             LinkedHashSet<String> lset = new LinkedHashSet<>();
             char ch;
             do {
-                System.out.print("Enter value in HashSet: ");
+                System.out.print("Enter value in LinkedHashSet: ");
                 lset.add(sc.next());
                 System.out.print("Want to enter more values?(y/n): ");
                 ch = sc.next().charAt(0);
