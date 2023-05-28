@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class Implementation_Of_Tries {
     static class Node {
         Node children[] = new Node[26];
@@ -13,7 +12,7 @@ public class Implementation_Of_Tries {
     }
 
     public static Node root = new Node();
-
+// Insertion
     public static void insert(String word) {
         Node curr = root;
         for (int level = 0; level < word.length(); level++) {
@@ -25,7 +24,7 @@ public class Implementation_Of_Tries {
         }
         curr.eow = true;
     }
-    
+    // Searching
     public static boolean search(String key){
         Node curr = root;
         for(int level = 0; level<key.length(); level++){
@@ -37,7 +36,6 @@ public class Implementation_Of_Tries {
         }
         return curr.eow;
     }
-
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             char ch;
