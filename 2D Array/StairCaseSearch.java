@@ -34,7 +34,7 @@ public class StairCaseSearch {
             int key = sc.nextInt();
             stairCaseSearch(matrix,key);
         }catch(Exception e){
-            System.out.println(e);
+            System.out.print(e);
         }
     }
 }
