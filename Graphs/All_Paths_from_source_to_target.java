@@ -22,7 +22,7 @@ public class All_Paths_from_source_to_target {
 
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.print("How many nodes Graph contain: ");
+            System.out.print("How many nodes does Graph contain: ");
             int v = sc.nextInt();
             ArrayList<Edge>[] graph = new ArrayList[v];
 
