@@ -1,7 +1,4 @@
-import java.lang.reflect.Array;
 import java.util.*;
-
-import javax.swing.text.html.StyleSheet;
 public class ConvertBSTtoBalancedBST {
     static class Node{
         int data;
@@ -54,24 +51,4 @@ public class ConvertBSTtoBalancedBST {
         return root;
     }
     
-    public static void main(String args[]) {
-        try (Scanner sc = new Scanner(System.in)) {
-            ArrayList<Integer> values = new ArrayList<>();
-            char ch;
-            do {
-                System.out.print("Enter value in sorted way: ");
-                int data = sc.nextInt();
-                values.add(data);
-                System.out.print("Want to enter more values(y/n)? ");
-                ch = sc.next().charAt(0);
-            } while (ch == 'y' || ch == 'Y');
-
-            // Node root = createBST(values, 0, values.size() - 1);
-            System.out.println("\nBalanced BST is: ");
-            balanceBST(root);
-            // preorder(root);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-    }
 }
