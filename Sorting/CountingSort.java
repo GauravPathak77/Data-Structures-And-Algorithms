@@ -45,5 +45,8 @@ public class CountingSort {
             }
             countingSort(arr, size);
         }
+        catch(Exception e){
+            System.out.println(e);
+        }
     }
 }
