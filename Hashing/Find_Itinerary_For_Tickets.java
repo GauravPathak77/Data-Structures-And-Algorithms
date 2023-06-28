@@ -30,7 +30,7 @@ public class Find_Itinerary_For_Tickets{
             String start = getStart(tickets);
             System.out.print(start);
             for(String key : tickets.keySet()){
-                System.out.print(" -> " + tickets.get(start));
+                System.out.print(" ->\t" + tickets.get(start));
                 start = tickets.get(start);
             }
         }
