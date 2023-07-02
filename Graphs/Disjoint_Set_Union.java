@@ -35,6 +35,7 @@ public class Disjoint_Set_Union {
     public static void main(String[] args){
         try(Scanner sc = new Scanner(System.in)){
             init();
+            System.out.println("Disjoint Set Union");
             System.out.print(find(3) + " , ");
             union(1,3);
             System.out.print(find(3));
