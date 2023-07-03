@@ -4,7 +4,7 @@ public class StairCaseSearch {
         int row = 0, col = matrix[0].length-1;
         while(row < matrix.length && col >= 0){
             if(matrix[row][col] == key){
-                System.out.print("Element found at (" + row + "," + col + ")");
+                System.out.println("Element found at (" + row + "," + col + ")");
                 return;
             }
             
@@ -15,7 +15,7 @@ public class StairCaseSearch {
                 row++;
             }
         }
-        System.out.print("Element not found!");
+        System.out.println("Element not found!");
     }
     public static void main(String args[]){
         try(Scanner sc = new Scanner(System.in)){
