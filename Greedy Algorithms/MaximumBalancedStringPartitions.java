@@ -22,7 +22,7 @@ public class MaximumBalancedStringPartitions{
             System.out.print("Enter string: ");
             String str = sc.next();
             int count = balancedStringSplit(str, N);
-            System.out.println("Given String can be partitioned into " + count + " balanced substring");
+            System.out.println("\nGiven String can be partitioned into " + count + " balanced substring");
         }catch(Exception e){
             System.out.println(e);
         }
