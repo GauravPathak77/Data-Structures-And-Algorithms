@@ -26,10 +26,10 @@ public class IsMonotone{
         } while (choice == 'y' || choice == 'Y');
 
         if(isMonotone(nums)){
-            System.out.println("Monotone");
+            System.out.print("Monotone");
         }
         else{
-            System.out.println("Not Monotone");
+            System.out.print("Not Monotone");
         }
         }catch(Exception e){
         System.out.println(e);
