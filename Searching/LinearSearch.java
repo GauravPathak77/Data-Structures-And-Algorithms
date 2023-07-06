@@ -8,7 +8,8 @@ public class LinearSearch {
         }
         return -1;
     }
-    public static void main(String args[]) {
+
+public static void main(String args[]) {
         try(Scanner sc = new Scanner(System.in)){
             System.out.print("How many numbers you want to enter? ");
             int size = sc.nextInt();
