@@ -23,9 +23,9 @@ public class Zero_One_Knapsack_Recursion {
             int val[] = new int[n];
             int wt[] = new int[n];
             for(int i=0; i<n; i++){
-                System.out.print("Enetr value of item " + (i+1) + " : ");
+                System.out.print("Enter value of item " + (i+1) + " : ");
                 val[i] = sc.nextInt();
-                System.out.print("Enetr weight of item " + (i+1) + " : ");
+                System.out.print("Enter weight of item " + (i+1) + " : ");
                 wt[i] = sc.nextInt();
             }
             int max = knapsack(val, wt, W, n);
